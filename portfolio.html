@@ -275,12 +275,12 @@
                     </label><label class="w-checkbox checkbox-field">
 
                 </div>
-                <div class="margin-15px"><input type="submit" value="Send Request" data-wait="Please wait..." class="button w-button"></div>
+                <div class="margin-15px"><input type="submit" value="Send Request" data-wait="Please wait..." class="button w-button" id="submit_button"></div>
               </form>
               
               <script>
                 var formElement = document.getElementById("form");
-                var buttonElement = document.getElementById("button");
+                var buttonElement = document.getElementById("submit_button");
                 formElement.addEventListener("botpoison-challenge-start", function () {
                   buttonElement.setAttribute("disabled", "disabled");
                 });
