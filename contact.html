@@ -189,7 +189,14 @@
         <div class="margin-60px">
           <div class="form-content">
             <div class="w-form">
-              <form data-botpoison-public-key="pk_655d33e4-8892-4087-a1d7-0b982614f5f6"  action="https://submit-form.com/ZZEeorhp" id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get"><label for="Name-2" class="field-label-form">Name</label><input type="text" class="text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="" id="Name"><label for="Email-2" class="field-label-form">Email Address</label><input type="email" class="text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="" id="Email" required=""><label for="Text-Area-2" class="field-label-form">message</label><textarea name="Text-Area" maxlength="5000" id="Text-Area" data-name="Text Area" placeholder="" class="text-field area w-input"></textarea>
+              <form data-botpoison-public-key="pk_655d33e4-8892-4087-a1d7-0b982614f5f6"  action="https://submit-form.com/ZZEeorhp" id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get"><label for="Name-2" class="field-label-form">Name</label>
+                <input type="text" class="text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="" id="Name">
+                <label for="Email-2" class="field-label-form">Email Address</label><input type="email" class="text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="" id="Email" required="">
+                <label for="Text-Area-2" class="field-label-form">message</label><textarea name="Business-Name" maxlength="5000" id="Text-Area" data-name="Text Area" placeholder="" class="text-field area w-input"></textarea>
+                <label for="Text-Area-2" class="field-label-form">message</label><textarea name="Text-Area" maxlength="5000" id="Text-Area" data-name="Text Area" placeholder="" class="text-field area w-input"></textarea>
+                
+                
+                
                 <div class="margin-20px"><label for="Text-Area-3" class="field-label-form">what are you looking for</label>
                   <div class="checkbox-flex"><label class="w-checkbox checkbox-field">
                       <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="checkbox-6" name="web-design" data-name="Checkbox 6" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-select w-form-label" for="checkbox-6">Web Design</span>
@@ -207,6 +214,22 @@
                 </div>
                 <div class="margin-15px"><input type="submit" value="Send Request" data-wait="Please wait..." class="button w-button"></div>
               </form>
+                            
+              <script>
+                var formElement = document.getElementById("form");
+                var buttonElement = document.getElementById("button");
+                formElement.addEventListener("botpoison-challenge-start", function () {
+                  buttonElement.setAttribute("disabled", "disabled");
+                });
+                formElement.addEventListener("botpoison-challenge-success", function () {
+                  buttonElement.removeAttribute("disabled");
+                });
+                formElement.addEventListener("botpoison-challenge-error", function () {
+                  buttonElement.removeAttribute("disabled");
+                });
+              </script>
+
+
               <div class="success-message w-form-done">
                 <div>Thank you! Your submission has been received!</div>
               </div>
