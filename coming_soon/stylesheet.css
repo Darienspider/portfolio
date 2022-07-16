@@ -1,0 +1,141 @@
+@font-face {
+  font-family: 'AdiHaus';
+  src: URL('https://assets.codepen.io/6060109/adihaus_regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "AdiHaus";
+  src: url("https://assets.codepen.io/6060109/adihaus_bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+body, html { 
+  min-width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  font-family: AdiHaus;
+}
+
+body {
+  display: flex;
+}
+
+.all-container {
+  max-width: 450px;
+  margin: 0 auto;
+}
+
+#logo {
+  margin: 15px auto;
+  display: block;
+}
+
+#mobile_main_image {
+  background: url("https://assets.codepen.io/6060109/mobile-shoes.jpg") no-repeat right top;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+}
+
+.all-content-container {
+  padding: 20px 30px;
+}
+
+.text-content-container {
+  width: 100%;
+  text-align: center;
+}
+
+h2, p {
+   margin: 0;
+}
+
+h2 {
+  font-size: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+
+p {
+  line-height: 28px;
+  margin: 20px 0 40px;
+  color: #333333;
+}
+
+h2:nth-of-type(1) {
+  color: blue;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+h2:nth-of-type(2) {
+  color: #423A3A
+}
+
+form {
+  display: flex;
+}
+
+input[type="text"] {
+  width: 75%;
+  padding: 0 20px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 20%;
+  height: 50px;
+  box-sizing: border-box;
+  background-color: black;
+  font-weight: 700;
+  font-size: 16px;
+  color: white;
+  border: none;
+}
+
+.desktop-image {
+  display: none;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+  body {
+    background: url('https://assets.codepen.io/6060109/waves.png');
+    background-size: cover;
+  }
+  
+  .all-container {
+    width: 50%;
+  }  
+  .text-content-container {
+        text-align: left;
+  }
+  #mobile_main_image {
+    display: none;
+  }  
+  #logo {
+    margin: 30px 30px 100px;
+    display: block;
+  }
+  .desktop-image {
+    display: block;
+    width: 50%;
+    background: url('https://assets.codepen.io/6060109/shoes.png');
+    background-size: cover;
+  }
+  
+  h2 {
+    font-size: 64px;
+  }
+
+  input[type="submit"]{
+    background: rgb(6,6,6);
+    background: linear-gradient(90deg, rgba(6,6,6,1) 30%, rgba(49,49,52,1) 78%);
+    font-size: 25px;
+    font-family: "AdiHaus";
+  }
+}

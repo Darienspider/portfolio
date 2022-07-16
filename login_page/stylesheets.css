@@ -1,0 +1,44 @@
+body, html{
+    min-height: 100vh;
+    min-width: 100%;
+    background-color: #f1f1f1;
+}
+
+.login_panel{
+    display:flex;
+    background-color: black;
+    height: 620px;
+    width:50%;
+    margin: 0 auto;
+    margin-top: 8%
+}
+
+.left_side_panel{
+    background-color: green;
+    width: 50%;
+}
+
+#logo{
+    position:relative;
+    top: 5%;
+    left: 10%;
+}
+
+.login_form{
+    position: relative;
+    top:4%;
+    height: 80%;
+    width: 80%;
+    margin-top:;
+    margin: 0 auto;
+    background-color: grey;
+    text-align:center;
+}
+
+.login_form >h3 {
+    font-size: 30px;
+    text-align:center;
+}
+
+.login_form > form{
+}
