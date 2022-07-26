@@ -136,6 +136,13 @@ var setGlobal = __webpack_require__(162);
 var copyConstructorProperties = __webpack_require__(246);
 var isForced = __webpack_require__(125);
 
+window.onload = function() {
+  var $recaptcha = document.querySelector('#g-recaptcha-response');
+
+  if($recaptcha) {
+      $recaptcha.setAttribute("required", "required");
+  }
+};
 /*
   options.target      - name of the target object
   options.global      - target is the global object

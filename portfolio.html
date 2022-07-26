@@ -258,42 +258,34 @@
         <div class="margin-60px">
           <div class="form-content">
             <div class="w-form">
-              <form action="https://submit-form.com/ZZEeorhp" id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="get" data-botpoison-public-key="pk_84a0ff4c-72f8-4f62-b0d8-29e222ab31ae">
+              <form action="https://submit-form.com/ZZEeorhp" id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" method="POST">
                 <label for="Name-2" class="field-label-form">Name</label><input type="text" class="text-field w-input" maxlength="256" name="Name" data-name="Name" placeholder="" id="Name">
                 <label for="Email-2" class="field-label-form">Email Address</label><input type="email" class="text-field w-input" maxlength="256" name="Email" data-name="Email" placeholder="" id="Email" required="">
                 <label for="Text-Area-2" class="field-label-form">message</label><textarea name="Text-Area" maxlength="5000" id="Text-Area" data-name="Text Area" placeholder="Example text" class="text-field area w-input"></textarea>
-                
+                <div class="h-captcha" data-sitekey="499d2dc0-0382-4c55-b78a-902b0f228d75"></div>
+                <script src="https://js.hcaptcha.com/1/api.js" async defer>
+                  // TODO: Figure out how to post once the API returns true
+                  
+                </script>
+
                 <div class="margin-20px"><label for="Text-Area-3" class="field-label-form">what are you looking for</label>
                   <div class="checkbox-flex"><label class="w-checkbox checkbox-field">
                       <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="Checkbox 1" name="web-design" data-name="Checkbox 1" style="opacity:0;position:absolute;z-index:-1"><span for="Checkbox-1" class="checkbox-select w-form-label">Web Design</span>
                     </label><label class="w-checkbox checkbox-field">
-
-                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="checkbox-2" name="web-development" data-name="Checkbox 2" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-select w-form-label" for="checkbox-2">Web Development</span>
+                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="checkbox-2" name="web-development" data-name="Checkbox 2" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-select w-form-label" for="checkbox-2">Development</span>
                     </label><label class="w-checkbox checkbox-field">
-
-                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="checkbox-4" name="checkbox-4" data-name="shopify" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-select w-form-label" for="checkbox-4">Shopify</span>
+                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="checkbox-3" name="shopify" data-name="Checkbox 3" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-select w-form-label" for="checkbox-3">Shopify</span>
                     </label><label class="w-checkbox checkbox-field">
-
+                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="checkbox-4" name="branding" data-name="Checkbox 4" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-select w-form-label" for="checkbox-4">Branding</span>
+                    </label><label class="w-checkbox checkbox-field">
+                      <!-- <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="checkbox-5" name="checkbox-5" data-name="Checkbox 5" style="opacity:0;position:absolute;z-index:-1"><span class="checkbox-select w-form-label" for="checkbox-5">Graphic Design</span> -->
+                    </label><label class="w-checkbox checkbox-field">
+                      <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="Checkbox 6" name="marketing" data-name="Checkbox 6" style="opacity:0;position:absolute;z-index:-1"><span for="Checkbox-6" class="checkbox-select w-form-label">Marketing</span>
+                    </label></div>
                 </div>
-                <div class="margin-15px"><input type="submit" value="Send Request" data-wait="Please wait..." class="button w-button" id="submit_button"></div>
+                <div class="margin-15px"><input type="submit" value="Send Request" data-wait="Please wait..." class="button w-button"></div>
               </form>
-              
-              <script>
-                var formElement = document.getElementById("form");
-                var buttonElement = document.getElementById("submit_button");
-                formElement.addEventListener("botpoison-challenge-start", function () {
-                  buttonElement.setAttribute("disabled", "disabled");
-                });
-                formElement.addEventListener("botpoison-challenge-success", function () {
-                  buttonElement.removeAttribute("disabled");
-                });
-                formElement.addEventListener("botpoison-challenge-error", function () {
-                  buttonElement.removeAttribute("disabled");
-                });
-              </script>
 
-
-              </script>
               <div class="success-message w-form-done">
                 <div>Thank you! Your submission has been received!</div>
               </div>
