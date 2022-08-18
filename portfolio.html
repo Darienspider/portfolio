@@ -299,9 +299,7 @@
                   var listenerFirst = msgField.addEventListener("keypress",valueMSG);
                   function valueMSG(){
                     if (msgField.value.includes(test)){
-                      console.log(msgField.value);
                       submitButton.style.display ="none";
-
                     }
                   }
                   
@@ -309,10 +307,9 @@
                   function checkNameValue(){
                     let loweredName = nameField.value.toLowerCase();
                     let botnameLowered = botname.toLowerCase();
-                    if (loweredName.includes(botnameLowered)){
+                    if (nameField.value.includes(botnameLowered)){
                       submitButton.style.display="none";
-                    }
-                  }
+                    }}
                 </script>
               
               
