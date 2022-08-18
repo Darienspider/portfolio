@@ -195,8 +195,36 @@
                 <label for="Text-Area-2" class="field-label-form">message</label><textarea name="Text-Area" maxlength="5000" id="Text-Area" data-name="Text Area" placeholder="Example text" class="text-field area w-input"></textarea>
                 <div class="h-captcha" data-sitekey="499d2dc0-0382-4c55-b78a-902b0f228d75"></div>
                 
-                <script src="https://js.hcaptcha.com/1/api.js" async defer>
-                  // TODO: Figure out how to post once the API returns true
+                <script>
+                  // find form
+                  var FormObject = document.forms['wf-form-Contact-Form'];
+                                    // pull only the text area element
+                  var nameField = FormObject.elements[0];
+                  var msgField = FormObject.elements[2];
+                                    // provide string to test for
+                  var submitButton = document.getElementById("Submit")
+                  
+                  
+                  var test = "https://duri.rbertilsson.se/";
+                  var botname = "CrytoDah"
+                                    
+                                    // add a listener for the element
+                  var listenerFirst = msgField.addEventListener("keypress",valueMSG);
+                  function valueMSG(){
+                    if (msgField.value.includes(test)){
+                      console.log(msgField.value);
+                      submitButton.style.display ="none";
+
+                    }
+                  }
+                  
+                  var listenerSecond = nameField.addEventListener("keypress",checkNameValue);
+                  function checkNameValue(){
+                    let loweredName = nameField.value.toLowerCase();
+                    let botnameLowered = botname.toLowerCase();
+                    if (loweredName.includes(botnameLowered)){
+                      submitButton.style.display="none";
+                    }
                 </script>
 
                 <div class="margin-20px"><label for="Text-Area-3" class="field-label-form">what are you looking for</label>
