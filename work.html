@@ -53,7 +53,7 @@
                 <div class="link-underline nav-underline-left white"></div>
               </div>
             </a>
-            <a href="contact.html" class="nav-link white w-inline-block">
+            <a href="contactme.html" class="nav-link white w-inline-block">
               <div class="nav-item-text">Contact</div>
               <div class="nav-link-circle white">
                 <div class="link-underline nav-underline-right white"></div>
@@ -257,7 +257,38 @@
                       <div class="w-checkbox-input w-checkbox-input--inputType-custom checkbox"></div><input type="checkbox" id="Checkbox 6" name="marketing" data-name="Checkbox 6" style="opacity:0;position:absolute;z-index:-1"><span for="Checkbox-6" class="checkbox-select w-form-label">Marketing</span>
                     </label></div>
                 </div>
-                <div class="margin-15px"><input type="submit" value="Send Request" data-wait="Please wait..." class="button w-button"></div>
+                <div class="margin-15px"><input type="submit" value="Send Request" data-wait="Please wait..." class="button w-button" id="Submit"></div>
+                <script>
+                  // find form
+                  var FormObject = document.forms['wf-form-Contact-Form'];
+                                    // pull only the text area element
+                  var nameField = FormObject.elements[0];
+                  var msgField = FormObject.elements[2];
+                                    // provide string to test for
+                  var submitButton = document.getElementById("Submit")
+                  
+                  
+                  var test = "https://duri.rbertilsson.se/";
+                  var botname = "CrytoDah"
+                                    
+                                    // add a listener for the element
+                  var listenerFirst = msgField.addEventListener("keypress",valueMSG);
+                  function valueMSG(){
+                    if (msgField.value.includes(test)){
+                      console.log(msgField.value);
+                      submitButton.style.display ="none";
+
+                    }
+                  }
+                  
+                  var listenerSecond = nameField.addEventListener("keypress",checkNameValue);
+                  function checkNameValue(){
+                    let loweredName = nameField.value.toLowerCase();
+                    let botnameLowered = botname.toLowerCase();
+                    if (loweredName.includes(botnameLowered)){
+                      submitButton.style.display="none";
+                    }}
+                </script>
               </form>
               <div class="success-message w-form-done">
                 <div>Thank you! Your submission has been received!</div>
