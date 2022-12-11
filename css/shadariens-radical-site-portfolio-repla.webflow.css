@@ -6290,6 +6290,18 @@ figure {
   align-self: center;
 }
 
+/* Personally added CSS */
+.knownLanguages{
+  line-height: 40px; 
+}
+.knownLanguages a{
+  text-decoration: none;
+}
+
+
+
+
+
 @media screen and (max-width: 767px) {
   #w-node-fb1d1d83-3ead-f17c-375d-15d6bd2a400b-bd2a4008 {
     -ms-grid-row: span 1;

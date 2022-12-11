@@ -1,4 +1,6 @@
-/* font-family: Hellix, I've installed for you */
+html{
+  font-family: Hellix;
+}
 
 * {
     margin: 0;
