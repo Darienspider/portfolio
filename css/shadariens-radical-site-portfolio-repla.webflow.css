@@ -4001,7 +4001,7 @@ figure {
   grid-column-gap: 20px;
   grid-row-gap: 16px;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
@@ -4035,6 +4035,9 @@ figure {
   background-color: #68d4ff;
 }
 
+.services-circle._4 {
+  background-color: rgba(255, 254, 250);
+}
 .service-title {
   font-size: 22px;
 }
@@ -5474,6 +5477,13 @@ figure {
   margin-right: auto;
   margin-left: auto;
 }
+
+#languageImage{
+  height: 400px;
+  margin-top: -20%;
+}
+
+
 
 /* Media Queries */
 
