@@ -26,3 +26,12 @@
 #right-panel{
     background-color: green;
 }
+
+/* form area */
+#EmailTextArea{
+    background-color:red;
+}
+
+#PasswordTestArea{
+    background-color: green;
+}
