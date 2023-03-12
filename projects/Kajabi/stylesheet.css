@@ -1,0 +1,28 @@
+.body{
+    display:flex;
+}
+
+#main-page{
+    display:flex;
+    background-color: black;
+
+}
+
+.panel{
+    background-color: yellow;
+    height:100px;
+    width:50%;
+    display:block;
+}
+
+#left-panel{
+    background-color:white;
+}
+
+#signin{
+    justify-content: center;
+}
+
+#right-panel{
+    background-color: green;
+}
