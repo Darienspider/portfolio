@@ -5905,6 +5905,18 @@ figure {
   .max-w-width.left._2{
     margin-top:150px;
   }
+  .button.black{
+    margin-top:10px;
+    width:150px;
+
+  }
+
+  .button.black:nth-child(4){
+    margin: 10px 20px auto;
+  }
+  .horizontal-divider{
+    display:none;
+  }
   .nav-link {
     padding-top: 0px;
     padding-bottom: 0px;
