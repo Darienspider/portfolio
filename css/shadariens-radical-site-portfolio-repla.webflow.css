@@ -5906,8 +5906,7 @@ figure {
 
 @media only screen 
 and (device-width: 390px) 
-and (device-height: 844px) 
-and (-webkit-device-pixel-ratio: 3) {
+and (device-height: 844px) {
   .button.black{
     margin-top:10px;
     width:150px;
