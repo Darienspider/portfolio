@@ -2566,13 +2566,6 @@
 }
 
 @media screen and (max-width: 479px) {
-  .max-w-width.left._2{
-    margin-top:150px;
-  }
-  .button.black{
-    margin-top:10px;
-    width:150px;
-  }
 
   .w-commerce-commercecartcontainerwrapper--cartType-modal {
     -webkit-box-orient: horizontal;
