@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Montserrat_26.0.0_google";
+  src: url("../../../fonts/Montserrat-Medium_26.0.0_google.ttf");
+  font-weight: 500; 
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat_30.0.0_google";
+  src: url("../../../fonts/Montserrat-Medium_30.0.0_google.ttf");
+  font-weight: 500; 
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat_26.0.0_google";
+  src: url("../../../fonts/Montserrat-Regular_26.0.0_google.ttf");
+  font-weight: 400; 
+  font-display: swap;
+}
