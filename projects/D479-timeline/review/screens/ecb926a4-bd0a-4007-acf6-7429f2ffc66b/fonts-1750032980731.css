@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Calibri_6.26.0_system";
+  src: url("../../../fonts/Calibri-Light_6.26.0_system.ttf");
+  font-weight: 300; 
+  font-display: swap;
+}
+@font-face {
+  font-family: "Allura_22.0.0_google";
+  src: url("../../../fonts/Allura-Regular_22.0.0_google.ttf");
+  font-weight: 400; 
+  font-display: swap;
+}

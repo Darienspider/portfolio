@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Asap Condensed_17.0.0_google";
+  src: url("../../../fonts/Asap Condensed-Extralight_17.0.0_google.ttf");
+  font-weight: 200; 
+  font-display: swap;
+}
+@font-face {
+  font-family: "Allura_22.0.0_google";
+  src: url("../../../fonts/Allura-Regular_22.0.0_google.ttf");
+  font-weight: 400; 
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arizonia_22.0.0_google";
+  src: url("../../../fonts/Arizonia-Regular_22.0.0_google.ttf");
+  font-weight: 400; 
+  font-display: swap;
+}

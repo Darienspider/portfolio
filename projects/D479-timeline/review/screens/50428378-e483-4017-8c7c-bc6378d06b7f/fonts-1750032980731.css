@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Montserrat_26.0.0_google";
+  src: url("../../../fonts/Montserrat-Bold_26.0.0_google.ttf");
+  font-weight: 700; 
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat_26.0.0_google";
+  src: url("../../../fonts/Montserrat-Regular_26.0.0_google.ttf");
+  font-weight: 400; 
+  font-display: swap;
+}
+@font-face {
+  font-family: "Arsenal SC_1.0.0_google";
+  src: url("../../../fonts/Arsenal SC-Regular_1.0.0_google.ttf");
+  font-weight: 400; 
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat_30.0.0_google";
+  src: url("../../../fonts/Montserrat-Regular_30.0.0_google.ttf");
+  font-weight: 400; 
+  font-display: swap;
+}
+@font-face {
+  font-family: "Allura_22.0.0_google";
+  src: url("../../../fonts/Allura-Regular_22.0.0_google.ttf");
+  font-weight: 400; 
+  font-display: swap;
+}
